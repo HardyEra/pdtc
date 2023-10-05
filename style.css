@@ -16,17 +16,41 @@ html,body{
      
 }
 #nav{
+    display: flex;
+    position: absolute;
+    width: 100vw;
     height:50px;
-    width:100%;
-    background-color: rgba(10, 6, 6, 0.401);
-    position:fixed;
-    top:2.7%;
-    display:flex;
+    /* background-color: red; */
+    padding: 3rem 7vw;
     justify-content: space-between;
-    padding: 0px 390px;
-    align-items: center;
+    /* height:50px; */
+    width:100vw;
+    /* background-color: rgba(10, 6, 6, 0.401); */
+    /* position:fixed; */
+    /* top:5.7%; */
+    /* display:flex; */
+    /* justify-content: space-between; */
+    /* padding: 0px 300px; */
+    /* align-items: center;*/
     z-index: 99;
+    position: relative;
+    
 }
+#icon{
+color:white;
+
+
+}
+#navpart{
+    display: flex;
+    flex-direction: row;
+    height:30px;
+    width:400px;
+    justify-content: space-between;
+    /* background-color: red; */
+    /* justify-content: flex-end; */
+}
+
 #nav a{
     color:white;
     text-decoration: none;
@@ -35,13 +59,19 @@ html,body{
 #nav a{
 
 }
+#effect{
+    height:200vh;
+    width:100%;
+    z-index: 90;
+    position: relative;
+}
 #page1{
     width:100%;
     height:100vh;
     display: flex;
     /* align-items: center;
     justify-content: center; */
-    background-color: black;
+    background-color: white;
     position:relative;
 
 }
@@ -51,7 +81,9 @@ html,body{
     background-color: black;
     display: flex;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    z-index: 98;
+    
 }
 #page3{
     height:100vh;
@@ -97,8 +129,10 @@ html,body{
     position: absolute;
     top:15vh;
     left:4vw;
-    height:160px;
+    height:180px;
+    width:570px;
     /* background-color: red; */
+    overflow: hidden;
 }
 #show2{
     position: absolute;
@@ -106,45 +140,103 @@ html,body{
     left:40vh;
     /* background-color: red; */
     height:185px;
+    width:670px;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 #show3{
     position:absolute;
     top:64.5vh;
     right:4vw;
     height:175px;
-
+    width:800px;
+    overflow: hidden;
     /* background-color: red; */
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
 
 #word1{
     font-size: 160px;
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 2px black;
     color: transparent;
+    position:absolute;
+    /* background-color: green; */
     
+}
+#word-1{
+    font-size: 160px;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    position:absolute;
+    /* background-color: green; */
 }
 #word2{
     
     font-size: 160px;
-    color: white;
+    color: black;
+    position:absolute;
 }
 #word3{
-    
+    text-align: center;
     font-size: 160px;
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 2px black;
     color: transparent;
+    position: absolute;
+}
+#word-3{
+    text-align: center;
+    font-size: 160px;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    left:30%;
+    position:absolute;
+}
+#box1{
+    height:10px;
+    width:800px;
+    /* background-color: red; */
+    position:absolute;
+    top:29%;
+    right:6%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 #line1{
     position: absolute;
     height:2px;
     width:800px;
-    background-color: white;
-    top:29%;
-    right:6%;
+    left:-800px;
+    background-color: black;
+    animation: move 3s infinite;
+    animation-delay: 3.5s;
+    
 }
+#box2{
+    height:10px;
+    width:600px;
+    /* background-color: red; */
+    position:absolute;
+    top:78%;
+    left:3%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#line2{
+    position: absolute;
+    height:2px;
+    width:600px;
+    left:-600px;
+    background-color: black;
+    animation: move2 3s infinite;
+    animation-delay: 3.5s;
+    
+}
+
 /* #one{
 position:absolute;
 top:60px;
@@ -180,6 +272,7 @@ position: absolute;
     position: absolute;
     top:12%;
     left:5%;
+    z-index: 98;
 }
 #play2{
     height:170px;
@@ -188,6 +281,7 @@ position: absolute;
     position: absolute;
     top:40%;
     right:20%;
+    z-index: 98;
 }
 #play3 {
     height:170px;
@@ -196,6 +290,7 @@ position: absolute;
     position: absolute;
     top:68%;
     left:5%;
+    z-index: 98;
 }
 #des1{
     background-color: rgb(59, 59, 59);
@@ -413,6 +508,22 @@ font-size: 45px;
 img{
     height:70%;
     width:auto;
+}
+@keyframes move{
+    0%{left:-800px;}
+    /* 50%{left:0px;} */
+    100%{left:800px;}
+}
+@keyframes move2{
+    0%{
+        left:600px;
+    }
+    /* 50%{
+        left:0px;
+    } */
+    100%{
+        left:-600px;
+    }
 }
 @media (max-width:500px){
 
