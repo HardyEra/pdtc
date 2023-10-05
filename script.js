@@ -43,6 +43,29 @@
 //     duration:0.5,
 //     delay:1.7,
 // })
+// gsap.to("#page1",{
+   
+//     opacity:0,
+//     scrollTrigger:{
+//         trigger:"#effect",
+//         scroller:"body",
+//         start:"top -10%",
+//         end:"top -50%",
+//         scrub:3,
+//     }
+// })
+// gsap.to("#page2",{
+   
+//     opacity:1,
+//     scrollTrigger:{
+//         trigger:"#effect",
+//         scroller:"body",
+//         start:"top -10%",
+//         end:"top -50%",
+//         scrub:3,
+//     }
+// })
+
 gsap.from(".play0",{
     left:"25%",
     duration:1,
@@ -69,3 +92,51 @@ gsap.from(".des0",{
         scrub:3,
     }
 })
+gsap.from("#word1",{
+    top:"550px",
+    duration:1,
+    delay:3,
+})
+gsap.to("#word-1",{
+    top:"-300px",
+    duration:1,
+    delay:2.5,
+})
+gsap.from("#word-1",{
+    top:"300px",
+    duration:1,
+    delay:0.8,
+})
+gsap.from("#word3",{
+    top:"550px",
+    duration:1,
+    delay:3,
+})
+gsap.to("#word-3",{
+    top:"-300px",
+    duration:1,
+    delay:2.5,
+})
+gsap.from("#word2",{
+    top:"550px",
+    duration:1,
+    delay:0.8,
+})
+gsap.from("#word-3",{
+    top:"300px",
+    duration:1,
+    delay:0.8,
+})
+
+
+
+// gsap.from("#line1",{
+//     left:"-800px",
+//     duration:1,
+//     delay:0.8,
+// })
+// gsap.to("#line1",{
+//     left:"800px",
+//     duration:1,
+//     delay:1.2,
+// })
